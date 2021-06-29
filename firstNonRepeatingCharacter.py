@@ -9,9 +9,9 @@ def firstNRC(string):
         if c not in charCount.keys():
             charCount[c] = 0
         charCount[c] += 1
-    for k, v in charCount.items():
-        if v == 1:
-            return k
+    for c in string:
+        if charCount[c] == 1:
+            return c
     return "_"
 
 # Tests
