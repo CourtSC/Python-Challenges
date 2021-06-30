@@ -30,8 +30,8 @@ zeros(12) = 2
 
 # Using recursion.
 def zeroes(n):
-    x = n / 5
-    return int(x + zeroes(x)) if x else 0
+    x = n // 5
+    return x + zeroes(x) if x else 0
 
 print(
     zeroes(0), # 0
